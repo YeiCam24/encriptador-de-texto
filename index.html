@@ -18,26 +18,26 @@
 
             <section class="zona-juego">
                 <div class="zona-input">
-                    <input class="input" type="text" placeholder="Ingrese un texto aqui">
+                    <input id="entradaTexto" class="input" type="text" placeholder="Ingrese un texto aqui">
                 </div>
                 <div class="guia">
                     <img src="img/exclamacion.png" alt="">
                     <p>Solo letras minúsculas y sin acentos</p>
                 </div>
                 <div class="botones">
-                    <button class="boton">Encriptar</button>
-                    <button class="boton">Desencriptar</button>
+                    <button onclick="encriptar();" class="boton">Encriptar</button>
+                    <button onclick="desencriptar();" class="boton">Desencriptar</button>
                 </div>
                 
             </section>
             
-            <section class="zona-respuesta">
+            <section class="zona-respuesta" id="zona-respuesta">
                 <div class="imagen">
-                    <img src="img/img-block.png" alt="inmagen de busqueda" width="100%">
+                    <img id="img-respuesta" src="img/img-encriptar.png" alt="inmagen de busqueda" width="100%">
                 </div>
                 <div class="textos">
-                    <h3>Ningun mensaje fue encontrado</h3>
-                    <p>ingresa el texto que deseas encriptar o desencriptar</p>
+                    <h3 id="titulo-respuesta">Ningun mensaje fue encontrado</h3>
+                    <p id="parrafo-respuesta">ingresa el texto que deseas encriptar o desencriptar</p>
                 </div>
                 
             </section>
