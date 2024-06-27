@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Emcritador de texto</title>
     <link rel="stylesheet" href="css/estilos.css">
+    <link rel="shortcut icon" href="/img/img_logo.PNG" />
 </head>
 <body>
     <main>
@@ -25,21 +26,25 @@
                     <p>Solo letras minúsculas y sin acentos</p>
                 </div>
                 <div class="botones">
-                    <button onclick="encriptar();" class="boton">Encriptar</button>
-                    <button onclick="desencriptar();" class="boton">Desencriptar</button>
+                    <button  onclick="encriptar();" class="boton">Encriptar</button>
+                    <button  onclick="desencriptar();" class="boton">Desencriptar</button>
                 </div>
                 
             </section>
             
             <section class="zona-respuesta" id="zona-respuesta">
+                <p id="respuesta"></p>
                 <div class="imagen">
                     <img id="img-respuesta" src="img/img-encriptar.png" alt="inmagen de busqueda" width="100%">
                 </div>
                 <div class="textos">
-                    <h3 id="titulo-respuesta">Ningun mensaje fue encontrado</h3>
+                    <h3 class="" id="titulo-respuesta">Ningun mensaje fue encontrado</h3>
                     <p id="parrafo-respuesta">ingresa el texto que deseas encriptar o desencriptar</p>
                 </div>
                 
+                <div>
+                    <button id="btn-copiar" onclick="copiar();" class="boton-copiar copiar">Copiar</button>
+                </div>
             </section>
             
         </div>
