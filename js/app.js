@@ -53,7 +53,6 @@ function desencriptar(){
 function copiar(){
     let btnCopiar = document.getElementById('btn-copiar');
     let texto = document.querySelector('#respuesta');
-    
     navigator.clipboard.writeText(texto.textContent);
     btnCopiar.textContent = 'Copeado';
 }

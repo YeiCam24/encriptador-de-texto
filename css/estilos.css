@@ -6,13 +6,11 @@
     margin: 0;
     box-sizing: border-box
 }
-body{
-    background-color:aliceblue ;
-    font-family: 'Inter';
-}
 
 .header{
-    padding-left: 270px ;
+    background-color: aliceblue;
+    width: 90%;
+    margin: auto;
 }
 .logo{
     padding-top: 20px;
@@ -23,6 +21,10 @@ body{
     border-radius: 50%;
 }
 
+body{
+    background-color:aliceblue ;
+    font-family: 'Inter';
+}
 .zona{
     margin-top: 40px;
     margin-bottom: 20px;
