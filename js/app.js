@@ -51,9 +51,9 @@ function desencriptar(){
 
 // FUNCION PARA COPEAR EL TEXTO 
 function copiar(){
-    let texto = document.getElementById('respuesta');
     let btnCopiar = document.getElementById('btn-copiar');
-
+    let texto = document.querySelector('#respuesta');
+    
     navigator.clipboard.writeText(texto.textContent);
     btnCopiar.textContent = 'Copeado';
 }

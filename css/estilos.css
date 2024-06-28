@@ -41,6 +41,12 @@ body{
     font-size: 24px;
     border: none;
     border-radius: 8px;
+    background: aliceblue;
+}
+.input:focus,
+.input:active{
+    border: none;
+    outline: none;
 }
 
 .guia{
@@ -71,6 +77,10 @@ body{
     color: aliceblue;
     border-radius: 24px;
 }
+.boton:hover{
+    background-color: aliceblue;
+    color: #0A3871;
+}
 .boton-copiar{
     width: 260px;
     padding: 20px;
@@ -79,6 +89,10 @@ body{
     color: #0A3871;
     border-radius: 24px;
     float: inline-end;
+}
+.boton-copiar:hover{
+    background-color: #0A3871;
+    color: aliceblue;
 }
 .copiar{
     display: none;
