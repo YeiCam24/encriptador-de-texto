@@ -1,8 +1,4 @@
 
-let imagenRespuesta = document.getElementById('img-respuesta');
-let tituloRespuesta = document.getElementById('titulo-respuesta');
-let parrafoRespuesta = document.getElementById('parrafo-respuesta');
-let zonaRespuesta = document.getElementById('contenido-respuesta');
 let contenidoRespuesta = document.querySelector('.contenido-respuesta');
 // FUNCION PARA ENCRIPTAR 
 function encriptar(){
@@ -13,7 +9,6 @@ function encriptar(){
     
     if (entradaTexto.length !=0) {
         document.getElementById('entradaTexto').value = '';
-        
         
         cambiarElementos('#respuesta', salidaEncriptada);
         // ELEMENTOS QUE APRECEN Y DESAPARECEN 
@@ -40,7 +35,6 @@ function desencriptar(){
     }else{
         alert('No se encontro ningun mensaje');
     }
-    
 }
 
 // FUNCION PARA COPEAR EL TEXTO 
@@ -48,9 +42,9 @@ function copiar(){
     let btnCopiar = document.getElementById('btn-copiar');
     let texto = document.querySelector('#respuesta');
     navigator.clipboard.writeText(texto.textContent);
+    document.getElementById('entradaTexto').focus();
     btnCopiar.textContent = 'Copeado';
 }
-
 
 function cambiarElementos(elemento, texto){
     let elementoHTML = document.querySelector(elemento);

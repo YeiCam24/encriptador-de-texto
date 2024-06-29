@@ -6,6 +6,19 @@
     margin: 0;
     box-sizing: border-box
 }
+body{
+    background-color:aliceblue ;
+    font-family: 'Inter';
+    background-image: linear-gradient(
+    rgba(244, 244, 238, 0.701),
+    rgba(0, 0, 255, 0.5)
+    ),url("/img/fondo.jpg");
+    background-attachment: fixed;
+    background-size: contain;
+    background-repeat: no-repeat;
+    overflow:auto;
+   
+}
 .contenido-respuesta{
     display: block;
 }
@@ -21,39 +34,29 @@
 .logo img{
     border-radius: 50%;
 }
-
-body{
-    background-color:aliceblue ;
-    font-family: 'Inter';
-    background-image: linear-gradient(
-    rgba(244, 244, 238, 0.701),
-    rgba(0, 0, 255, 0.5)
-    ),url("/img/fondo.jpg");
-    background-attachment: fixed;
-    background-size: contain;
-    background-repeat: no-repeat;
-   
-}
 .zona{
-    margin-top: 40px;
+    height: 90vh;
     margin-bottom: 20px;
     display: flex;
     justify-content: center;
-    
-   
 }
-.zona-input{
-    height: 400px;
-   
+.zona-juego{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
 }
 .input{
-    width: 577px;
-    height: 46px;
+    width: 80%;
+    resize: none;
+    height: 390px;
+    padding: 10px;
     font-size: 24px;
     border: none;
     border-radius: 8px;
+    opacity: 0.95;
     background: aliceblue;
 }
+
 .input:focus,
 .input:active{
     border: none;
@@ -63,25 +66,23 @@ body{
 .guia{
     display: flex;
     gap: 4px;
-    padding-left: 10px;
-    
 }
 .guia img{
-    width: 12px;
+    width: 16px;
 }
 .guia p {
-    font-size: 12px;
+    font-size: 16px;
+    font-weight: 600;
 }
 
 .botones{
     display: flex;
     justify-content: space-between;
-    margin: 20px;
-    width: 577px;
-    align-items: center;
+    margin-top: 10px;
+    width: 80%;
 }
 .boton{
-    width: 260px;
+    width: 45%;
     padding: 20px;
     font-size: 16px;
     background-color: #0A3871;
@@ -93,8 +94,22 @@ body{
     color: #0A3871;
     transition: all ease-in-out 1s;
 }
+.boton-des{
+    width: 45%;
+    padding: 20px;
+    font-size: 16px;
+    background-color: aliceblue;
+    color: #0A3871;
+    border-radius: 24px;
+    float: inline-end;
+}
+.boton-des:hover{
+    background-color: #0A3871;
+    color: aliceblue;
+    transition: all ease-in-out 1s;
+}
 .boton-copiar{
-    width: 260px;
+    width: 100%;
     padding: 20px;
     font-size: 16px;
     background-color: aliceblue;
@@ -110,35 +125,31 @@ body{
 .copiar{
     display: none;
 }
-
 .zona-respuesta{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 60px 30px;
-    width: 300px;
-    height: 550px;
+    padding: 40px 20px;
+    width: 20%;
+    height: 90%;
     border-radius: 32px;
     background-color: white;
     -webkit-box-shadow: 10px 10px 5px -8px rgba(0,0,0,0.21);
     -moz-box-shadow: 10px 10px 5px -8px rgba(0,0,0,0.21);
     box-shadow: 10px 10px 5px -8px rgba(0,0,0,0.21);
-
 }
 .ajustar{
     display: flex;
-    
-  
 }
 #respuesta{
     overflow: hidden;
 }
 .imagen{
-    width: 238px;
+    width: 100%;
     height: 238px;
 }
 .textos{
-    width: 238px;
+    width: 100%;
     height: 122px;
     text-align: center;
 }
@@ -147,12 +158,118 @@ body{
    padding-bottom: 29px;
 }
 
-
-
 .footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
     bottom: unset;
     padding: 24px;
     text-align: center;
     background-color: black;
+    color: #dedcdc;
+
+}
+.footer a{
+    text-decoration: none;
     color: aliceblue;
+}
+.contacto{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;   
+}
+.redes{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    gap: 30px;
+    margin: 10px;
+}
+.redes a:hover{
+    color: #0A3871;
+    transition: all ease-in-out 1s;
+}
+.redes img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+/*/////////////////////RESPONSIVE/////////////////////////*/
+
+@media (max-width: 1180px) {
+    .zona-respuesta{
+        padding: 10px;
+        width: 25%;
+        height: 90%;
+    }
+}
+@media (max-width: 810px) {
+    .zona{
+        height: 100%;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .zona-juego{
+        margin-top: 60px;
+        width: 100%;
+        align-items: center;
+    }
+    .zona-input{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .zona-respuesta{
+        width: 80%;
+        height: 400px;
+    }
+    .botones{
+        margin-bottom: 20px;
+    }
+    .titulo-respuesta{
+        font-size: 32px;
+    }
+    .imagen{
+        display: none;
+    }
+}
+@media (max-width: 610px){
+    .header{
+        height: 25px;
+    }
+    .zona{
+        
+        padding-top: 0px;
+    }
+    .botones{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .boton{
+        width: 100%;
+        border-radius: 8px;
+    }
+    .boton-copiar{
+        width: 100%;
+        border-radius: 8px;
+    }
+    .boton-des{
+        width: 100%;
+        border-radius: 8px;
+    }
+    .input{
+        height: 150px;
+        font-size: 16px;
+    }
+    .zona-respuesta{
+        border-radius: 8px;
+        height: 150px;
+    }
+    .footer{
+        flex-direction: column;
+        gap: 1px;
+    }
 }
