@@ -10,7 +10,6 @@
     display: block;
 }
 .header{
-    background-color: aliceblue;
     width: 90%;
     margin: auto;
 }
@@ -26,6 +25,14 @@
 body{
     background-color:aliceblue ;
     font-family: 'Inter';
+    background-image: linear-gradient(
+    rgba(244, 244, 238, 0.701),
+    rgba(0, 0, 255, 0.5)
+    ),url("/img/fondo.jpg");
+    background-attachment: fixed;
+    background-size: contain;
+    background-repeat: no-repeat;
+   
 }
 .zona{
     margin-top: 40px;
@@ -84,6 +91,7 @@ body{
 .boton:hover{
     background-color: aliceblue;
     color: #0A3871;
+    transition: all ease-in-out 1s;
 }
 .boton-copiar{
     width: 260px;
@@ -97,12 +105,16 @@ body{
 .boton-copiar:hover{
     background-color: #0A3871;
     color: aliceblue;
+    transition: all ease-in-out 1s;
 }
 .copiar{
     display: none;
 }
 
 .zona-respuesta{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     padding: 60px 30px;
     width: 300px;
     height: 550px;
@@ -112,6 +124,11 @@ body{
     -moz-box-shadow: 10px 10px 5px -8px rgba(0,0,0,0.21);
     box-shadow: 10px 10px 5px -8px rgba(0,0,0,0.21);
 
+}
+.ajustar{
+    display: flex;
+    
+  
 }
 #respuesta{
     overflow: hidden;
