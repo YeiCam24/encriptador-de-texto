@@ -1,7 +1,8 @@
 
 let imagenRespuesta = document.getElementById('img-respuesta');
 let tituloRespuesta = document.getElementById('titulo-respuesta');
-let parrafoRespuesta = document.getElementById('parrafo-respuesta')
+let parrafoRespuesta = document.getElementById('parrafo-respuesta');
+let zonaRespuesta = document.getElementById('contenido-respuesta');
 // FUNCION PARA ENCRIPTAR 
 function encriptar(){
    
@@ -18,7 +19,7 @@ function encriptar(){
         imagenRespuesta.remove();
         tituloRespuesta.remove();
         parrafoRespuesta.remove();
-        
+
         document.getElementById('btn-copiar').classList.remove('copiar');
 
     }else{

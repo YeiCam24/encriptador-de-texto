@@ -6,7 +6,9 @@
     margin: 0;
     box-sizing: border-box
 }
-
+.contenido-respuesta{
+    display: block;
+}
 .header{
     background-color: aliceblue;
     width: 90%;
