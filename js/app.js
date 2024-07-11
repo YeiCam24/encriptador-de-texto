@@ -14,9 +14,12 @@ function encriptar(){
         // ELEMENTOS QUE APRECEN Y DESAPARECEN 
         contenidoRespuesta.classList.add('copiar');
         document.getElementById('btn-copiar').classList.remove('copiar');
+        let btnCopiar = document.getElementById('btn-copiar');
+        btnCopiar.textContent = 'Copiar';
+        swal('Encriptador de texto ', 'Mensaje Encriptado Correctamente','success');
 
     }else{
-        alert('No se encontro ningun mensaje');
+        swal('Encriptador de texto ', 'No encontro ningun mensaje','error');
     }
 }
 
@@ -31,9 +34,12 @@ function desencriptar(){
         contenidoRespuesta.classList.add('copiar');
         document.getElementById('btn-copiar').classList.remove('copiar');
         document.getElementById('entradaTexto').value = '';
+        swal('Encriptador de texto ', 'Mensaje Desencriptado','success');
+        let btnCopiar = document.getElementById('btn-copiar');
+        btnCopiar.textContent = 'Copiar';
         
     }else{
-        alert('No se encontro ningun mensaje');
+        swal('Encriptador de texto ', 'No encontro ningun mensaje','error');
     }
 }
 
